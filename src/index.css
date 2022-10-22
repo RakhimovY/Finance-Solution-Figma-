@@ -37,14 +37,14 @@ body {
   font-weight: 500;
   font-family: Montserrat;
 }
-/* ---------------------------------------------------------------------------- */
+/* ---Wrapper------------------------------------------------------------------------- */
 .wrapper {
-  min-height: 100vh;
+  min-height: 100%;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
-/* ---------------------------------------------------------------------------- */
+/* ---Container------------------------------------------------------------------------- */
 ._container {
   max-width: 1046px;
   padding: 0px 15px;
@@ -130,11 +130,11 @@ body {
 
 /* ---footer------------------------------------------------------------------------- */
 .footer {
-  margin-top: auto;
   text-align: center;
 }
 /* ---PAGE------------------------------------------------------------------------- */
 .page {
+  flex: 1 1 auto;
 }
 .page__main-block {
 }
@@ -145,24 +145,99 @@ body {
 }
 
 .main-block__body {
-  padding: 184px 0px 191px 0px;
+  padding: 184px 0px 332px 0px;
   position: relative;
   z-index: 2;
+  max-width: 400px;
+}
+@media (max-width: 992px) {
+  .main-block__body {
+    padding: 124px 0px 191px 0px;
+  }
+}
+.main-block__body > *:not(:last-child) {
+  margin: 0px 0px 35px 0px;
 }
 .main-block__title {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 138%;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+@media (max-width: 992px) {
+  .main-block__title {
+    font-size: 48px;
+  }
 }
 .main-block__text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #737373;
 }
 .main-block__buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
 }
 .main-block__button {
+  border-radius: 37px;
+  padding: 10px 36px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 200%;
+  text-align: center;
+  letter-spacing: 0.2px;
 }
+.main-block__button_orange {
+  background: #ff7b47;
+  color: #ffffff;
+}
+
 .main-block__button_border {
+  border: 1px solid #0d5c63;
+  color: #0d5c63;
 }
-.main-block__img {
+.main-block__image {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 793px;
   top: 0;
   left: 0;
+}
+
+@media (max-width: 1300px) {
+  .main-block__image img {
+    object-position: right;
+    opacity: 0.5;
+  }
+}
+
+/* ---Services--------------------------------------------------------------------------------------- */
+
+.page__services {
+}
+.services {
+}
+.services__container {
+}
+
+.services__body {
+}
+.services__column {
+}
+.services__item {
+}
+.item-services {
+}
+.item-services__icon {
+}
+.item-service__title {
+}
+.item-services__text {
 }
