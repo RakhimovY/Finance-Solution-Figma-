@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundIMG from "https://github.com/RakhimovY/Figma/blob/master/src/img/background.jpg";
+import cover from "../img/cover";
 
 const Main = () => {
   return (
@@ -25,7 +25,7 @@ const Main = () => {
         </div>
       </div>
       <div className="main-block__img _ibg">
-        <img src={backgroundIMG} alt="" />
+        <img src={cover} alt="cover" />
       </div>
     </div>
   );
