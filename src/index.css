@@ -57,7 +57,7 @@ body {
 ._ibg img {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 793px;
   top: 0;
   left: 0;
   object-fit: cover;
@@ -149,6 +149,7 @@ body {
   position: relative;
   z-index: 2;
   max-width: 400px;
+  max-height: 793px;
 }
 @media (max-width: 992px) {
   .main-block__body {
@@ -194,6 +195,12 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
 }
+
+@media (max-width: 390px) {
+  .main-block__button {
+    min-width: 190px;
+  }
+}
 .main-block__button_orange {
   background: #ff7b47;
   color: #ffffff;
@@ -206,7 +213,7 @@ body {
 .main-block__image {
   position: absolute;
   width: 100%;
-  height: 793px;
+  height: 100%;
   top: 0;
   left: 0;
 }
@@ -221,6 +228,9 @@ body {
 /* ---Services--------------------------------------------------------------------------------------- */
 
 .page__services {
+  position: relative;
+  margin: -111px 0px 0px 0px;
+  z-index: 2;
 }
 .services {
 }
@@ -230,14 +240,75 @@ body {
 .services__body {
 }
 .services__column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 30px;
+}
+@media (max-width: 1100px) {
+  .services__column {
+    flex: 1 0 100%;
+  }
+  .services__column :last-child {
+    flex: 1 1 100%;
+  }
+  .item-services:not(:last-child) {
+    width: 49%;
+  }
+}
+
+@media (max-width: 720px) {
+  .services__column {
+    flex-direction: column;
+  }
 }
 .services__item {
 }
 .item-services {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 35px 40px;
+  gap: 10px;
+  width: 328px;
+  max-height: 242px;
+  background: #ffffff;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+@media (max-width: 1100px) {
+  .item-services {
+  }
 }
 .item-services__icon {
+  width: 48px;
+  height: 48px;
 }
 .item-service__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  color: #252b42;
 }
 .item-services__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.item-services_lastService {
+  background: #0d5c63;
+}
+
+.item-services_lastService .item-service__title {
+  color: #ffffff;
+}
+
+.item-services_lastService .item-services__text {
+  color: #ffffff;
 }

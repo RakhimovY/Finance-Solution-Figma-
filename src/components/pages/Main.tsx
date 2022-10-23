@@ -1,11 +1,10 @@
 import React from "react";
-// import one from "../../assets/servicesIcons/1.svg";
 
 const Main = () => {
   const cover = require("../../assets/image/cover.jpg");
-  const firstIcon = require("../../assets/servicesIcons/1.svg");
-  const secondIcon = require("../../assets/servicesIcons/2.svg");
-  const thirdIcon = require("../../assets/servicesIcons/3.svg");
+  const firstIcon = require("../../assets/servicesIcons/1.svg").default;
+  const secondIcon = require("../../assets/servicesIcons/2.svg").default;
+  const thirdIcon = require("../../assets/servicesIcons/3.svg").default;
   return (
     <div className="page">
       <div className="page__main-block main-block">
@@ -43,7 +42,7 @@ const Main = () => {
             <div className="services__column">
               <div className="services__item item-services">
                 <div className="item-services__icon">
-                  <svg xmlns={firstIcon} />
+                  <img src={firstIcon} />
                 </div>
                 <h3 className="item-service__title">
                   Environmental Consulting
@@ -61,8 +60,8 @@ const Main = () => {
                   Just type what's on your mind and we'll get you there.
                 </div>
               </div>
-              <div className="services__item item-services">
-                <div className="item-services__icon">
+              <div className="services__item item-services item-services_lastService">
+                <div className="item-services__icon ">
                   <img src={thirdIcon} alt="thirdIcon" />
                 </div>
                 <h3 className="item-service__title">
