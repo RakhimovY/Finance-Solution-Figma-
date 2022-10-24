@@ -135,6 +135,7 @@ body {
 /* ---PAGE------------------------------------------------------------------------- */
 .page {
   flex: 1 1 auto;
+  background-color: #fafafa;
 }
 .page__main-block {
 }
@@ -247,19 +248,8 @@ body {
   padding: 0px;
   gap: 30px;
 }
-@media (max-width: 1100px) {
-  .services__column {
-    flex: 1 0 100%;
-  }
-  .services__column :last-child {
-    flex: 1 1 100%;
-  }
-  .item-services:not(:last-child) {
-    width: 49%;
-  }
-}
 
-@media (max-width: 720px) {
+@media (max-width: 1100px) {
   .services__column {
     flex-direction: column;
   }
@@ -268,6 +258,7 @@ body {
 }
 .item-services {
   display: flex;
+
   flex-direction: column;
   align-items: flex-start;
   padding: 35px 40px;
@@ -280,6 +271,8 @@ body {
 
 @media (max-width: 1100px) {
   .item-services {
+    padding: 25px;
+    width: 300px;
   }
 }
 .item-services__icon {
@@ -311,4 +304,90 @@ body {
 
 .item-services_lastService .item-services__text {
   color: #ffffff;
+}
+
+/* ---Advantage---------------------------------------------------------------------------------- */
+.page__advantages {
+  background-color: #fafafa;
+}
+.advantages {
+}
+.advantages__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  gap: 50px;
+}
+.advantages__header {
+  margin: 0px 93px;
+}
+.header-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+.header-block__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+.header-block__sub-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+.advantages__body {
+}
+.advantages__column {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+  gap: 10px;
+  background: #ffffff;
+  width: 230px;
+  height: 209px;
+}
+@media (max-width: 1100px) {
+  .advantages__column {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .advantages__item {
+    flex: 1 0 45%;
+  }
+}
+
+.advantages__icon {
+  width: 48px;
+  height: 48px;
+}
+.advantages__value {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+.advantages__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #737373;
 }
