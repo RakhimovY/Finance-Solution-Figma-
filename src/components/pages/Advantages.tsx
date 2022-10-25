@@ -6,6 +6,10 @@ export default function Advantages() {
   const third = require("../../assets/advantagesIcon/third.svg").default;
   const fourth = require("../../assets/advantagesIcon/fourth.svg").default;
 
+  // const num = 5 && 0 && 5 && undefined;
+  const num = true || 0 || false;
+  console.log(num);
+
   return (
     <div className="page__advantages advantages ">
       <div className="advantages__container _container">

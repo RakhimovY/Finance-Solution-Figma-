@@ -8,7 +8,7 @@ function App() {
       <Header />
       <Main />
       <Advantages />
-      <footer className="footer"> Copyright Кристина Ветрова</footer>
+      <footer className="footer"> Copyright Rakhimov Yerkebulan</footer>
     </div>
   );
 }
