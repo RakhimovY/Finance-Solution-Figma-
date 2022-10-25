@@ -6,17 +6,14 @@ export default function Advantages() {
   const third = require("../../assets/advantagesIcon/third.svg").default;
   const fourth = require("../../assets/advantagesIcon/fourth.svg").default;
 
-  // const num = 5 && 0 && 5 && undefined;
-  const num = true || 0 || false;
-  console.log(num);
-
   return (
     <div className="page__advantages advantages ">
       <div className="advantages__container _container">
         <div className="advantages__header header-block">
           <h2 className="header-block__title">Designing Better Experience</h2>
           <div className="header-block__sub-title">
-            Problems trying to resolve the conflict between the two major realms
+            Problems trying to resolve the conflict between the two major realms{" "}
+            <br />
             of Classical physics: Newtonian mechanics
           </div>
         </div>
