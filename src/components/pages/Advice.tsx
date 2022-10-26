@@ -28,12 +28,11 @@ export default function Advice() {
                   it was discovered{" "}
                 </div>
               </div>
-              <div className="item-advice__img _ibg">
+              <div className="item-advice__img ">
                 <img src={first} alt=" A single source of truth" />
               </div>
             </div>
-          </div>
-          <div className="advice__column">
+
             <div className="advice__item item-advice">
               <div className="item-advice__header">
                 <div className="item-advice__header_title">
@@ -44,12 +43,11 @@ export default function Advice() {
                   matter
                 </div>
               </div>
-              <div className="item-advice__img _ibg">
+              <div className="item-advice__img ">
                 <img src={second} alt="Fastest way to organize" />
               </div>
             </div>
-          </div>
-          <div className="advice__column">
+
             <div className="advice__item item-advice">
               <div className="item-advice__header">
                 <div className="item-advice__header_title">
@@ -59,12 +57,11 @@ export default function Advice() {
                   They describe a universe consisting of bodies moving
                 </div>
               </div>
-              <div className="item-advice__img _ibg">
+              <div className="item-advice__img ">
                 <img src={third} alt="Fastest way to take action" />
               </div>
             </div>
-          </div>
-          <div className="advice__column">
+
             <div className="advice__item item-advice">
               <div className="item-advice__header">
                 <div className="item-advice__header_title">
@@ -75,7 +72,7 @@ export default function Advice() {
                   behaviour
                 </div>
               </div>
-              <div className="item-advice__img _ibg">
+              <div className="item-advice__img ">
                 <img src={fourth} alt="Work better together" />
               </div>
             </div>
