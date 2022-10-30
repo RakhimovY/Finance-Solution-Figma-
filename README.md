@@ -16,3 +16,5 @@ You will also see any lint errors in the console.
 
 
 https://www.figma.com/file/NdzafBB8YrsuktTDlsdmGf/Relvise
+
+https://www.youtube.com/watch?v=6lOJ4BJLZcc&ab_channel=RakhimovY.
