@@ -19,7 +19,7 @@ const Main = () => {
             <div className="main-block__buttons">
               <a
                 href="/"
-                className="main-block__button main-block__button_orange"
+                className="main-block__button main-block__button_border"
               >
                 Get Quote Now
               </a>
